@@ -1,16 +1,16 @@
 # Base64
 PHP base64 algorithm
 
-I made this a couple years ago, the code can probably be optimized.
+I made this a couple years ago and improved the code.
  
 ```
-encrypt() produces exactly the same result as base64_encode()
+encode() produces exactly the same result as base64_encode()
 decode() produces exactly the same result as base64_decode()
 ```
 
 
 ## Usage: 
 ```php
-echo encrypt("string to be encoded");
-echo decrypt("code to be decoded");
+echo encode("string to be encoded");          //c3RyaW5nIHRvIGJlIGVuY29kZWQ=
+echo decode("c3RyaW5nIHRvIGJlIGVuY29kZWQ=");  //string to be encoded
 ```
